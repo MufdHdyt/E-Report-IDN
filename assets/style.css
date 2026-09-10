@@ -7,3 +7,31 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero .col img {
+    width: 500px;
+
+}
+
+.about .col img {
+    width: 450px;
+}
+
+.kategori {
+    background-color:rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .hero .col img {
+        width: 100%;
+    }
+
+    .about .col img {
+        width: 75%;
+    }
+}
