@@ -1,5 +1,5 @@
 /* My Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
     --text-dark: #25344a;
@@ -18,8 +18,6 @@ body {
 }
 
 section {
-    padding-top: 64px;
-    padding-bottom: 58px;
     animation: fade-up 0.7s ease both;
 }
 
@@ -42,6 +40,8 @@ footer img {
 
 .hero {
     min-height: 610px;
+    padding-top: 30px;
+    padding-bottom: 80px;
     align-items: center;
     background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
 }
@@ -51,18 +51,18 @@ footer img {
 }
 
 .section-label {
-    color: #6b7a90;
+    color: #0d6efd;
     font-size: 0.82rem;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
     letter-spacing: 0.12em;
 }
 
 .hero h1 {
-    font-weight: 700;
+    font-weight: 800;
     font-size: clamp(2.4rem, 4vw, 4rem);
     line-height: 1.35;
-    color: #5d6878;
+    color: #1f2937;
     margin-top: 0.35rem;
     margin-bottom: 1rem;
 }
@@ -72,6 +72,10 @@ footer img {
     color: var(--muted-text);
     font-size: 1.02rem;
     line-height: 1.9 !important;
+}
+
+.hero .section-label {
+    color: #0d6efd;
 }
 
 h1,
@@ -102,6 +106,7 @@ h5 {
 
 #about {
     background-color: #f7fbff;
+    padding-top: 100px;
     padding-bottom: 96px;
 }
 
@@ -119,6 +124,11 @@ h5 {
     background-color: #f4f8ff;
     padding-top: 96px;
     padding-bottom: 88px;
+}
+
+#recent {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .service-header {
@@ -155,7 +165,7 @@ h5 {
     padding: 18px;
     background-color: #ffffff;
     border: 1px solid rgba(13, 110, 253, 0.06);
-    border-radius: 12px;
+    border-radius: 30px;
     box-shadow: 0 16px 38px rgba(13, 110, 253, 0.16);
 }
 
@@ -218,7 +228,6 @@ h5 {
     border-radius: 10px;
     padding: 0.85rem 1.6rem;
     font-size: 1rem;
-    font-style: italic;
     font-weight: 600;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -235,7 +244,13 @@ h5 {
 .nav-link {
     font-size: 0.94rem;
     font-weight: 500;
+    color: #6b7a90 !important;
     transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0d6efd !important;
 }
 
 .nav-link:hover {
@@ -325,16 +340,18 @@ footer .row > div:nth-child(3) a i {
 }
 
 #faq {
+    padding-top: 80px;
     padding-bottom: 96px;
 }
 
 @media screen and (max-width: 768px) {
-    section {
+    .hero {
         padding-top: 52px;
         padding-bottom: 48px;
     }
 
     #about {
+        padding-top: 52px;
         padding-bottom: 58px;
     }
 
@@ -345,6 +362,11 @@ footer .row > div:nth-child(3) a i {
     #service {
         padding-top: 58px;
         padding-bottom: 54px;
+    }
+
+    #recent {
+        padding-top: 52px;
+        padding-bottom: 48px;
     }
 
     .service-header p:not(.section-label) {
@@ -366,6 +388,7 @@ footer .row > div:nth-child(3) a i {
     }
 
     #faq {
+        padding-top: 52px;
         padding-bottom: 72px;
     }
 
