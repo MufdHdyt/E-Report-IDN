@@ -24,7 +24,10 @@ section {
 .navbar {
     min-height: 82px;
     background-color: #ffffff !important;
-    box-shadow: 0 2px 12px rgba(13, 110, 253, 0.06);
+    box-shadow: 0 2px 8px rgba(37, 52, 74, 0.12);
+    position: sticky;
+    top: 0; 
+    z-index: 1030;
 }
 
 .navbar-brand {
@@ -47,7 +50,7 @@ footer img {
 }
 
 .hero .row {
-    gap: 2rem !important;
+    gap: 2rem !important;   
 }
 
 .section-label {
@@ -76,6 +79,7 @@ footer img {
 
 .hero .section-label {
     color: #0d6efd;
+    font-size: 0.9  rem;
 }
 
 h1,
@@ -86,6 +90,7 @@ h5 {
     font-style: normal;
     font-weight: 700;
 }
+
 
 #about h1,
 #service h1,
@@ -281,6 +286,7 @@ footer {
     color: #0d6efd;
     background-color: #eef6ff !important;
     box-shadow: 0 -6px 22px rgba(13, 110, 253, 0.1);
+    padding: 4rem 0 1rem;
 }
 
 footer h3,
@@ -297,8 +303,8 @@ footer a:hover {
 
 footer .copyright {
     border-top: 0;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
 }
 
 footer .row > div:nth-child(2) {
@@ -319,12 +325,17 @@ footer .footer-contact {
     gap: 0.75rem;
 }
 
+footer .footer-contact a {
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
 footer .footer-brand p {
     max-width: 430px;
 }
 
 footer .row > div:nth-child(3) {
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 footer .row > div:nth-child(3) a {
@@ -337,6 +348,13 @@ footer .row > div:nth-child(3) a i {
     flex: 0 0 1rem;
     margin-right: 0 !important;
     margin-top: 0.25rem;
+}
+
+footer .row > div:nth-child(3) a .fa-square-whatsapp {
+    flex-basis: 1.25rem;
+    font-size: 1.25rem;
+    margin-top: 0;
+    transform: translateX(-2px);
 }
 
 #faq {
@@ -397,7 +415,7 @@ footer .row > div:nth-child(3) a i {
     }
 
     footer .row > div:nth-child(3) {
-        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: 0;
     }
 
     footer .row > div:nth-child(3) a {
