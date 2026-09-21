@@ -70,7 +70,7 @@ footer img {
     margin-bottom: 1rem;
 }
 
-.hero p {
+.hero p {   
     max-width: 620px;
     color: var(--muted-text);
     font-size: 1.02rem;
@@ -133,6 +133,10 @@ h5 {
 
 #recent {
     padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#reports {
     padding-bottom: 80px;
 }
 
