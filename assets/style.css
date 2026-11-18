@@ -17,8 +17,18 @@ body {
     box-sizing: border-box;
 }
 
-section {
-    animation: fade-up 0.7s ease both;
+:root {
+    --animate-duration: 0.75s;
+    --animate-delay: 0.15s;
+}
+
+[data-animate] {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+[data-animate].animate__animated {
+    opacity: 1;
 }
 
 .navbar {
@@ -111,8 +121,8 @@ h5 {
 
 #about {
     background-color: #f7fbff;
-    padding-top: 100px;
-    padding-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 72px;
 }
 
 #faq {
@@ -446,6 +456,9 @@ footer .row > div:nth-child(3) a .fa-square-whatsapp {
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
         transition-duration: 0.01ms !important;
+    }
+    [data-animate] {
+        opacity: 1 !important;
     }
 }
 

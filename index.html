@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,449 +10,419 @@
   <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/png">
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  >
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+
+  <!-- Animate CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  >
 
   <!-- My CSS -->
   <link rel="stylesheet" href="./assets/style.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-    integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
-
+  <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
     <div class="container">
-
       <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
-        <img src="./assets/images/Logo.png" alt="Logo E-Report" width="30">
-
-        <span class="fw-bold text-primary">
-          E Report IDN
-        </span>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="./assets/images/Logo.png" alt="Logo E-Report" width="30" class="d-inline-block align-text-top rounded">
+        <span class="fw-bold text-primary">E Report IDN</span>
       </a>
 
       <!-- Navbar Toggle -->
-      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
+      <button
+        class="navbar-toggler shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-
       </button>
 
       <!-- Navbar Menu -->
       <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0">
-
+        <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0 text-center text-lg-start">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              Home
-            </a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#about">
-              About
-            </a>
+            <a class="nav-link" href="#about">About</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#service">
-              Services
-            </a>
+            <a class="nav-link" href="#service">Services</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#recent">
-              Recent
-            </a>
+            <a class="nav-link" href="reports.html">Recent</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#faq">
-              FAQ
-            </a>
+            <a class="nav-link" href="#faq">FAQ</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="panduan.html">Guide</a>
+          </li>
         </ul>
-
       </div>
-
     </div>
-
   </nav>
-
+  <!-- Navbar End -->
 
   <!-- Hero Section -->
-  <section class="hero d-flex" data-aos="fade-up">
-
+  <section class="hero d-flex overflow-hidden">
     <div class="container">
-
       <div class="hero row flex-nowrap flex-column flex-lg-row align-items-center text-center text-lg-start gap-5">
-
         <!-- Hero Text -->
-        <div class="col">
-
+        <div class="col" data-animate="animate__fadeInLeft">
           <p class="section-label mb-2">SELAMAT DATANG DI</p>
-
-          <h1 data-aos="fade-up" data-aos-delay="100">Aplikasi <span class="text-primary">E-Report</span> IDN 2026</h1>
-
-          <p class="lh-sm">
-            Solusi sederhana untuk mengelola pengaduan, layanan informasi, dan kebutuhan akademik maupun non-akademik
-            secara cepat, aman, dan terstruktur.
+          <h1 class="fw-bold">Aplikasi <span class="text-primary">E-Report</span> IDN 2026</h1>
+          <p class="lh-lg mb-4 text-secondary">
+            Solusi sederhana untuk mengelola pengaduan, layanan informasi, dan kebutuhan akademik maupun non-akademik secara cepat, aman, dan terstruktur.
           </p>
-
           <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-
-            <a href="#service" class="btn btn-primary">
-              Get Started
-            </a>
-
-            <a href="reports.html" class="btn btn-outline-primary">
-              Learn More
-            </a>
-
+            <a href="#service" class="btn btn-primary shadow-sm">Get Started</a>
+            <a href="reports.html" class="btn btn-outline-primary">All Reports</a>
           </div>
-
         </div>
-
 
         <!-- Hero Image -->
-        <div class="col d-flex justify-content-center justify-content-lg-end">
-
+        <div class="col d-flex justify-content-center justify-content-lg-end" data-animate="animate__fadeInRight">
           <img src="./assets/images/erport.png" alt="Report Illustration" class="img-fluid">
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
+  <!-- Hero Section End -->
 
   <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-
+  <section id="about" data-animate="animate__fadeInUp">
     <div class="container">
-
       <div class="about row">
-
         <div class="col text-center">
-
           <p class="section-label mb-2">ABOUT US</p>
-
-          <h1 data-aos="fade-up" data-aos-delay="100">Tentang <span class="text-primary">E-Report IDN</span></h1>
-
-          <p>
-            Kami hadir untuk memudahkan siswa, guru, dan seluruh civitas akademika dalam menyampaikan aspirasi, laporan,
-            serta kebutuhan yang membutuhkan perhatian cepat dari pihak yang tepat. Dengan sistem yang terorganisir,
-            setiap laporan dapat dikelola dengan lebih efisien.
+          <h1 class="fw-bold mb-3">Tentang <span class="text-primary">E-Report IDN</span></h1>
+          <p class="lh-lg mb-4 text-secondary">
+            Kami hadir untuk memudahkan siswa, guru, dan seluruh civitas akademika dalam menyampaikan aspirasi, laporan, serta kebutuhan yang membutuhkan perhatian cepat dari pihak yang tepat. Dengan sistem yang terorganisir, setiap laporan dapat dikelola dengan lebih efisien.
           </p>
-
-          <img src="./assets/images/team.png" alt="Foto Team" class="img-fluid">
-
+          <img src="./assets/images/team.png" alt="Foto Team" class="img-fluid rounded-4 shadow-sm">
         </div>
-
       </div>
-
     </div>
-
   </section>
-
+  <!-- About Section End -->
 
   <!-- Service Section -->
-  <section id="service" data-aos="fade-up">
-
+  <section id="service">
     <div class="container">
-
       <!-- Service Header -->
-      <div class="service-header text-center">
-
+      <div class="service-header text-center mb-5" data-animate="animate__fadeInUp">
         <p class="section-label mb-2">SERVICES</p>
-
-        <h1 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Layanan <span class="text-primary">Kami</span></h1>
-
-        <p>
-          Pilih jenis layanan yang sesuai dengan kebutuhan laporanmu.
-        </p>
-
+        <h1 class="fw-bold">Layanan <span class="text-primary">Kami</span></h1>
+        <p class="text-secondary">Pilih jenis layanan yang sesuai dengan kebutuhan laporanmu.</p>
       </div>
-
 
       <!-- Service Cards -->
       <div class="row service service-cards g-4">
-
         <!-- Service 1 -->
-        <div class="col-md-4 rounded">
-
-          <div class="card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="100">
-
+        <div class="col-md-4" data-animate="animate__fadeInUp">
+          <div class="card h-100 p-4 text-center border-0 shadow-sm">
             <i class="fa-solid fa-graduation-cap fa-3x text-primary mb-3"></i>
-
-            <h2 class="h4">
-              Pengaduan Akademik
-            </h2>
-
-            <p>
-              Pengaduan terkait masalah akademik, seperti nilai, jadwal, dan lain-lain yang mungkin memiliki dampak pada
-              proses pembelajaran.
+            <h2 class="h4 fw-bold">Pengaduan Akademik</h2>
+            <p class="text-secondary lh-lg mb-0">
+              Pengaduan terkait masalah akademik, seperti materi pelajaran, ujian, dan kebutuhan belajar mengajar santri.
             </p>
-
           </div>
-
         </div>
-
 
         <!-- Service 2 -->
-        <div class="col-md-4 rounded">
-
-          <div class="card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="200">
-
+        <div class="col-md-4" data-animate="animate__fadeInUp">
+          <div class="card h-100 p-4 text-center border-0 shadow-sm">
             <i class="fa-solid fa-screwdriver-wrench fa-3x text-primary mb-3"></i>
-
-            <h2 class="h4">
-              Pengaduan Fasilitas
-            </h2>
-
-            <p>
-              Menyediakan saluran untuk laporan terkait fasilitas, lingkungan, dan kebutuhan umum di sekolah.
+            <h2 class="h4 fw-bold">Pengaduan Fasilitas</h2>
+            <p class="text-secondary lh-lg mb-0">
+              Menyediakan saluran laporan terkait fasilitas umum, lingkungan asrama, kelas, dan sarana ibadah di sekolah.
             </p>
-
           </div>
-
         </div>
-
 
         <!-- Service 3 -->
-        <div class="col-md-4">
-
-          <div class="card h-100 p-4 text-center" data-aos="fade-up" data-aos-delay="300">
-
+        <div class="col-md-4" data-animate="animate__fadeInUp">
+          <div class="card h-100 p-4 text-center border-0 shadow-sm">
             <i class="fa-solid fa-user-secret fa-3x text-primary mb-3"></i>
-
-            <h2 class="h4">
-              Informasi & Konsultasi
-            </h2>
-
-            <p>
-              Ruang untuk mencari informasi dan menyampaikan pertanyaan agar dapat dijawab dengan jelas dan tepat.
+            <h2 class="h4 fw-bold">Pengaduan Anonymous</h2>
+            <p class="text-secondary lh-lg mb-0">
+              Ruang aman untuk menyampaikan pengaduan sosial, bullying, atau ketertiban dengan identitas yang terlindungi.
             </p>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
+  <!-- Service Section End -->
 
-
-
-
-  <!-- Recent Report -->
-  <section id="recent" data-aos="fade-up">
+  <!-- Recent Report Section -->
+  <section id="recent">
     <div class="container">
-      <div class="text-center mb-5 ">
+      <div class="text-center mb-5" data-animate="animate__fadeInUp">
         <p class="section-label mb-2">REPORT</p>
-        <h1 class="fw-bold" data-aos="fade-up" data-aos-delay="100">Laporan <span class="text-primary">Terbaru</span></h1>
-        <p class="lh-lg">Kumpulan laporan terbaru mengenai fasilitas, kegiatan, dan pembaruan layanan di lingkungan kami.
+        <h1 class="fw-bold">Laporan <span class="text-primary">Terbaru</span></h1>
+        <p class="lh-lg text-secondary">
+          Kumpulan laporan terbaru mengenai fasilitas, kegiatan, dan pembaruan layanan di lingkungan kami.
         </p>
       </div>
+
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <div class="card border-0 shadow">
-            <div class="kategori position-absolute px-3 py-2 ">
-              <a class="text-white text-decoration-none" href="">Fasilitas</a>
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+              <a class="text-white text-decoration-none small fw-semibold" href="#">Fasilitas</a>
             </div>
-
-            <img style="max-height: 300px; overflow: hidden;" src="./assets/images/keran rusak.png"
-              alt="Report Illustration" class="card-img-top">
-
-            <div class="card-body">
-              <h5 class="card-title">Keran Wudhu</h5>
-              <small>By: <a href="" class="text-decoration-none">Anonymous</a> 2 days ago</small>
-              <p class="card-text mt-3">Kondisi keran wudhu bocor dan aliran air mengecil, perlu segera diperbaiki.</p>
-              <a href="" class="btn btn-primary">Selengkapnya</a>
+            <div style="height: 250px; overflow: hidden">
+              <img
+                src="./assets/images/keran rusak.png"
+                alt="Keran Wudhu Rusak"
+                class="w-100 h-100"
+                style="object-fit: cover; object-position: center center"
+              />
             </div>
-
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Keran Wudhu</h5>
+              <p class="mb-2">
+                <small class="text-secondary">By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 2 days ago</small>
+              </p>
+              <p class="card-text text-secondary flex-grow-1">Kondisi keran wudhu bocor dan aliran air mengecil, perlu segera diperbaiki.</p>
+              <div class="mt-3">
+                <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
           </div>
-
-
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <div class="card border-0 shadow">
-            <div class="kategori position-absolute px-3 py-2 ">
-              <a class="text-white text-decoration-none" href="">Fasilitas</a>
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+              <a class="text-white text-decoration-none small fw-semibold" href="#">Fasilitas</a>
             </div>
-
-            <img style="max-height: 300px; overflow: hidden;" src="./assets/images/air kotor.jpeg"
-              alt="Report Illustration" class="card-img-top">
-
-            <div class="card-body">
-              <h5 class="card-title">Air Toilet Kotor</h5>
-              <small>By: <a href="" class="text-decoration-none">Anonymous</a> 2 days ago</small>
-              <p class="card-text mt-3">Air di seluruh toilet sekolah terlihat kotor dan perlu segera ditangani.</p>
-              <a href="" class="btn btn-primary">Selengkapnya</a>
+            <div style="height: 250px; overflow: hidden">
+              <img
+                src="./assets/images/air kotor.jpeg"
+                alt="Air Toilet Kotor"
+                class="w-100 h-100"
+                style="object-fit: cover; object-position: center center"
+              />
             </div>
-
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Air Toilet Kotor</h5>
+              <p class="mb-2">
+                <small class="text-secondary">By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 2 days ago</small>
+              </p>
+              <p class="card-text text-secondary flex-grow-1">Air di seluruh toilet sekolah terlihat kotor dan perlu segera ditangani.</p>
+              <div class="mt-3">
+                <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
           </div>
-
-
         </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-
-          <div class="card border-0 shadow">
-            <div class="kategori position-absolute px-3 py-2 ">
-              <a class="text-white text-decoration-none" href="">Sosial</a>
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+              <a class="text-white text-decoration-none small fw-semibold" href="#">Sosial</a>
             </div>
-
-            <img style="max-height: 300px; overflow: hidden;"
-              src="./assets/images/pembullyan.jpeg"
-              alt="Report Illustration" class="card-img-top">
-
-            <div class="card-body">
-              <h5 class="card-title">Pembullyan</h5>
-              <small>By: <a href="" class="text-decoration-none">Anonymous</a> 2 days ago</small>
-              <p class="card-text mt-3">Pengaduan tentang tindakan bullying yang terjadi di lingkungan sekolah.</p>
-              <a href="" class="btn btn-primary">Selengkapnya</a>
+            <div style="height: 250px; overflow: hidden">
+              <img
+                src="./assets/images/pembullyan.jpeg"
+                alt="Pembullyan"
+                class="w-100 h-100"
+                style="object-fit: cover; object-position: center center"
+              />
             </div>
-
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">Pembullyan</h5>
+              <p class="mb-2">
+                <small class="text-secondary">By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 2 days ago</small>
+              </p>
+              <p class="card-text text-secondary flex-grow-1">Pengaduan tentang tindakan bullying yang terjadi di lingkungan sekolah.</p>
+              <div class="mt-3">
+                <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+              </div>
+            </div>
           </div>
-
-
         </div>
-
-
-
       </div>
-      <div class="row mt-3">
+
+      <div class="row mt-4" data-animate="animate__fadeInUp">
         <div class="col text-center">
-          <a href="reports.html"
-            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">See
-            More <i class="fa-solid fa-arrow-right"></i></a>
+          <a
+            href="reports.html"
+            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover fw-semibold text-primary"
+          >
+            See More <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
         </div>
       </div>
-
-
-
+    </div>
   </section>
+  <!-- Recent Report Section End -->
 
-  <!-- FAQ   -->
-  <section id="faq" data-aos="fade-up">
+  <!-- FAQ Section -->
+  <section id="faq">
     <div class="container">
-      <div class="row text-center">
-        <h1 class="fw-bold text-center" data-aos="fade-up" data-aos-delay="100"><span class="text-primary">FAQ</span></h1>
-        <p class="lh-lg">Beberapa pertanyaan yang sering ditanyakan sebelum dan setelah mengirim laporan.</p>
+      <div class="row text-center mb-4" data-animate="animate__fadeInUp">
+        <h1 class="fw-bold"><span class="text-primary">FAQ</span></h1>
+        <p class="lh-lg text-secondary">Beberapa pertanyaan yang sering ditanyakan sebelum dan setelah mengirim laporan.</p>
       </div>
-      <div class="accordion" id="accordionExample">
-        <div class="row row-cols-1 row-cols-md-2 mt-5 g-3">
+
+      <div class="accordion" id="accordionExample" data-animate="animate__fadeInUp">
+        <div class="row row-cols-1 row-cols-md-2 mt-4 g-3">
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="false" aria-controls="collapseOne">
-                    Jika ingin melapor kehilangan, masuk kategori apa?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Jika ingin melapor kehilangan, masuk kategori apa?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Kamu bisa memilih kategori sosial atau fasilitas sesuai dengan kejadian yang ingin dilaporkan. Jelaskan
-                    kejadian dan lokasi secara singkat agar laporan lebih mudah diproses.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Kamu bisa memilih kategori sosial atau fasilitas sesuai dengan kejadian yang ingin dilaporkan. Jelaskan kejadian dan lokasi secara singkat agar laporan lebih mudah diproses.
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                    Berapa lama laporan diproses?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Berapa lama laporan diproses?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Laporan akan diperiksa oleh pihak terkait. Waktu prosesnya bisa berbeda sesuai jenis dan tingkat
-                    kebutuhan laporan.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Laporan akan diperiksa oleh pihak terkait. Waktu prosesnya berkisar antara 1 hingga 2 hari kerja sesuai jenis dan tingkat kebutuhan laporan.
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                    Apakah laporan saya bisa dikirim secara anonim?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Apakah laporan saya bisa dikirim secara anonim?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Bisa. Gunakan pilihan anonim jika kamu tidak ingin identitas ditampilkan dalam laporan.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Bisa. Gunakan pilihan anonim jika kamu tidak ingin identitas ditampilkan dalam laporan.
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseFour">
-                    Bagaimana jika laporan belum diproses?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Bagaimana jika laporan belum diproses?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Pastikan informasi yang dikirim sudah jelas. Untuk laporan yang penting, kamu bisa menghubungi pihak
-                    sekolah melalui kontak yang tersedia di bagian footer.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Pastikan informasi yang dikirim sudah jelas. Untuk laporan yang penting, kamu bisa menghubungi pihak sekolah melalui kontak yang tersedia di bagian footer.
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                  aria-expanded="false" aria-controls="collapseFive">
-                    Bagaimana cara menghubungi pihak sekolah?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Bagaimana cara menghubungi pihak sekolah?
                 </button>
               </h2>
               <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Kamu bisa memakai email, WhatsApp, atau alamat yang tercantum di bagian Contact us.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Kamu bisa memakai email, WhatsApp, atau alamat yang tercantum di bagian Contact us pada footer situs.
                 </div>
               </div>
             </div>
           </div>
+
           <div class="col">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                  aria-expanded="false" aria-controls="collapseSix">
-                    Bagaimana cara memberikan masukan?
+                <button
+                  class="accordion-button bg-primary text-white collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Bagaimana cara memberikan masukan?
                 </button>
               </h2>
               <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                    Kirimkan saran melalui laporan atau kontak yang tersedia. Masukanmu bisa membantu layanan ini menjadi
-                    lebih baik.
+                <div class="accordion-body text-secondary lh-lg small">
+                  Kirimkan saran melalui laporan atau kontak yang tersedia. Masukanmu bisa membantu layanan ini menjadi lebih baik.
                 </div>
               </div>
             </div>
@@ -462,88 +431,60 @@
       </div>
     </div>
   </section>
+  <!-- FAQ Section End -->
 
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5 footer-brand">
+          <div class="d-flex gap-2 align-items-center">
+            <img class="d-inline-block align-text-top rounded" width="30" src="./assets/images/Logo.png" alt="Logo E-Report">
+            <h3 class="mb-0 fw-bold">E-Report IDN</h3>
+          </div>
+          <p class="lh-lg mt-3 opacity-75">Forum sederhana untuk menyampaikan pengaduan secara cepat, aman, dan terarah.</p>
+        </div>
+        <div class="col-lg-3 footer-menu d-flex flex-column">
+          <h4 class="fw-bold mb-2">Menu</h4>
+          <a class="text-decoration-none opacity-75" href="#hero">Home</a>
+          <a class="text-decoration-none opacity-75" href="#about">About</a>
+          <a class="text-decoration-none opacity-75" href="#service">Services</a>
+          <a class="text-decoration-none opacity-75" href="reports.html">Recent</a>
+          <a class="text-decoration-none opacity-75" href="#faq">FAQ</a>
+          <a class="text-decoration-none opacity-75" href="panduan.html">Guide</a>
+        </div>
+        <div class="col-lg-4 footer-contact d-flex flex-column">
+          <h4 class="fw-bold mb-2">Contact us</h4>
+          <a target="_blank" href="mailto:m.mufid.hdyt@gmail.com" class="text-decoration-none opacity-75">
+            <i class="fa-solid fa-envelope me-2"></i>
+            m.mufid.hdyt@gmail.com
+          </a>
+          <a target="_blank" href="https://wa.me/6285771304430" class="text-decoration-none opacity-75">
+            <i class="fa-brands fa-square-whatsapp"></i>
+            085771304430
+          </a>
+          <a target="_blank" href="https://goo.gl/maps/6g5k5k5k5k5k5k5k5" class="text-decoration-none opacity-75">
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830
+          </a>
+        </div>
+      </div>
+      <div class="copyright text-center pt-3 pb-2">
+        <p class="opacity-75 mb-0">© Copyright by <strong>Mufid</strong> 2026, All right reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
 
-
-  
-
-  <!-- JS Bootstrap -->
+  <!-- JS Bootstrap Bundle -->
   <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-    crossorigin="anonymous">
-  </script>
-
-  <script>
-    document.querySelectorAll('.navbar .nav-link').forEach((link) => {
-      link.addEventListener('click', () => {
-        document.querySelector('.navbar .nav-link.active')?.removeAttribute('aria-current');
-        document.querySelector('.navbar .nav-link.active')?.classList.remove('active');
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      });
-    });
-  </script>
-
-  <!-- JS AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 700,
-      once: true
-    });
-  </script> 
-  
-<footer>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-5 footer-brand">
-        <div class="d-flex gap-2 align-items-center">
-          <img class="d-inline-block align-text-top rounded" width="30" src="./assets/images/Logo.png" alt="Logo E-Report" >
-          <h3 class="mb-0 fw-bold">E-Report IDN</h3>
-        </div>
-        <p class="lh-lg mt-3 opacity-75">Forum sederhana untuk menyampaikan pengaduan secara cepat, aman, dan terarah.</p>
-      </div>
-      <div class="col-lg-3 footer-menu d-flex flex-column">
-        <h4 class="fw-bold mb-2">Menu</h4>
-        <a class="text-decoration-none opacity-75" href="#">home</a>
-        <a class="text-decoration-none opacity-75" href="#">about</a>
-        <a class="text-decoration-none opacity-75" href="#">services</a>
-        <a class="text-decoration-none opacity-75" href="#">recent</a>
-        <a class="text-decoration-none opacity-75" href="#">FAQ</a>
-      </div>
-      <div class="col-lg-4 footer-contact d-flex flex-column">
-        <h4 class="fw-bold mb-2">Contact us</h4>
-        <a target="_blank" href="mailto:m.mufid.hdyt@gmail.com" class="text-decoration-none opacity-75">
-          <i class="fa-solid fa-envelope me-2"></i>
-          m.mufid.hdyt@gmail.com
-          </a>  
-        <a target="_blank" href="https://wa.me/6285771304430" class="text-decoration-none opacity-75">
-          <i class="fa-brands fa-square-whatsapp"></i>
-          085771304430
-        </a>
-        <a target="_blank" href="https://goo.gl/maps/6g5k5k5k5k5k5k5k5" class="text-decoration-none opacity-75">
-          <i class="fa-solid fa-location-dot me-2"></i>
-          Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830
-        </a>
-
-
-      </div>
-    </div>
-    <div class="copyright text-center pt-3 pb-2">
-      <p class="opacity-75 mb-0">© Copyright by <strong>Mufid</strong> 2026, All right reserved.</p>
-    </div>
-  </div>
-
-</footer>
-
+  <!-- App JS -->
+  <script src="./assets/main.js"></script>
 
 </body>
-
 </html>

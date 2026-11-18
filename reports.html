@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Home | E Report IDN</title>
+    <title>All Reports | E Report IDN</title>
 
     <!-- Favicon -->
     <link
@@ -21,31 +21,32 @@
       crossorigin="anonymous"
     />
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="./assets/style.css" />
-
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 animate__animated animate__fadeInDown">
       <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/Logo.png" alt="Logo E-Report" width="30" />
-
-          <span class="fw-bold text-primary"> E Report IDN </span>
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="./assets/images/Logo.png" alt="Logo E-Report" width="30" class="d-inline-block align-text-top rounded" />
+          <span class="fw-bold text-primary">E Report IDN</span>
         </a>
 
         <!-- Navbar Toggle -->
@@ -63,338 +64,276 @@
 
         <!-- Navbar Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0">
+          <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0 text-center text-lg-start">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html#"> Home </a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="index.html#about"> About </a>
+              <a class="nav-link" href="index.html#about">About</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="index.html#service"> Services </a>
+              <a class="nav-link" href="index.html#service">Services</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="index.html#recent"> Recent </a>
+              <a class="nav-link active" aria-current="page" href="reports.html">Recent</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="index.html#faq"> FAQ </a>
+              <a class="nav-link" href="index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="panduan.html">Guide</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Navbar End -->
 
-    <!-- semua laporan -->
-    <section id="reports">
+    <!-- All Reports Section -->
+    <section id="reports" class="py-5">
       <div class="container">
-        <!-- judul -->
-        <div class="text-center">
-          <h1 class="fw-hold text-primary-emphasis">All reports</h1>
-          <p class="text -secondary 1h-lg">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            odit similique libero nulla modi vel aspernatur ab velit maxime et,
-            illum quae? Incidunt, inventore quis?
-          </p>
+        <!-- Judul & Tombol Tambah Laporan -->
+        <div class="d-flex justify-content-center justify-content-md-between align-items-center flex-wrap mb-5" data-animate="animate__fadeInUp">
+          <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+            <h1 class="fw-bold text-primary-emphasis">All Reports</h1>
+            <p class="lh-lg text-secondary mb-0">
+              Kumpulan pengaduan dan aspirasi warga sekolah untuk menciptakan lingkungan belajar yang lebih baik, aman, dan nyaman.
+            </p>
+          </div>
+          <div>
+            <button class="btn btn-primary px-3 shadow-sm" data-bs-toggle="modal" data-bs-target="#addModal">
+              <i class="fa-solid fa-plus me-1"></i>
+              Tambah Laporan
+            </button>
+          </div>
         </div>
 
-        <!-- filter -->
-        <div class="row gap-3 gap-md-0 mt-5">
+        <!-- Filter Bar -->
+        <div class="row g-3 mb-5" data-animate="animate__fadeInUp">
           <div class="col-md-4">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search reports..."
-            />
+            <input type="text" class="form-control shadow-sm" placeholder="Cari laporan..." />
           </div>
-          <div class="col-3">
-            <select class="form-select">
+          <div class="col-sm-6 col-md">
+            <select class="form-select shadow-sm">
               <option value="">Pilih Kategori</option>
               <option value="fasilitas">Fasilitas</option>
               <option value="akademik">Akademik</option>
-              <option value="sosial">Sosial</option>
+              <option value="sosial">Sosial / Anonymous</option>
             </select>
           </div>
-          <div class="col-3">
-            <select class="form-select">
+          <div class="col-sm-6 col-md">
+            <select class="form-select shadow-sm">
               <option value="">Urutkan</option>
               <option value="terbaru">Terbaru</option>
               <option value="terlama">Terlama</option>
             </select>
           </div>
           <div class="col-md-2">
-            <button class="btn btn-primary w-100">
-              <i class="fa-solid fa-filter"></i>
+            <button class="btn btn-primary w-100 shadow-sm">
+              <i class="fa-solid fa-filter me-1"></i>
+              Filter
             </button>
-            Filter
           </div>
         </div>
 
-        <!-- reports -->
+        <!-- Reports Cards Grid -->
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Fasilitas</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/keran rusak.png"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Keran Wudhu</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Kondisi keran wudhu bocor dan aliran air mengecil, perlu
-                  segera diperbaiki.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/keran rusak.png"
+                  alt="Keran Wudhu Rusak"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Keran Wudhu Rusak</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 2 days ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <p class="card-text text-secondary flex-grow-1">
+                  Kondisi keran wudhu bocor dan aliran air mengecil, perlu segera diperbaiki agar santri dapat berwudhu dengan tertib.
+                </p>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Fasilitas</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/air kotor.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Air Toilet Kotor</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Air di seluruh toilet sekolah terlihat kotor dan perlu segera
-                  ditangani.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/air kotor.jpeg"
+                  alt="Air Toilet Kotor"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Air Toilet Kotor</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Ammar Ayyasy</a> &bull; 1 day ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <p class="card-text text-secondary flex-grow-1">
+                  Air di seluruh toilet asrama terlihat keruh dan berbau, mohon pihak sarpras memeriksa bak penampungan air.
+                </p>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Sosial</a>
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Sosial</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/pembullyan.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Pembullyan</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Pengaduan tentang tindakan bullying yang terjadi di lingkungan
-                  sekolah.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/pembullyan.jpeg"
+                  alt="Laporan Bullying"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Laporan Pembullyan</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 3 days ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
-              </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/keran rusak.png"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Keran Wudhu</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Kondisi keran wudhu bocor dan aliran air mengecil, perlu
-                  segera diperbaiki.
+                <p class="card-text text-secondary flex-grow-1">
+                  Pengaduan terkait tindakan verbal bullying yang terjadi di ruang kelas, mohon bimbingan konseling dan tindakan tegas.
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Akademik</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/air kotor.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Air Toilet Kotor</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Air di seluruh toilet sekolah terlihat kotor dan perlu segera
-                  ditangani.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/erport.png"
+                  alt="Modul Belajar"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Keterlambatan Modul</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Santri RPL</a> &bull; 4 days ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <p class="card-text text-secondary flex-grow-1">
+                  Materi ajar modul praktikum semester ini belum dapat diakses melalui portal e-learning sekolah.
+                </p>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Sosial</a>
+          <!-- Card 5 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Fasilitas</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/pembullyan.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Pembullyan</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Pengaduan tentang tindakan bullying yang terjadi di lingkungan
-                  sekolah.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/keran rusak.png"
+                  alt="Keran Bocor"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Keran Tempat Cuci Piring</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Anonymous</a> &bull; 5 days ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
-              </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/keran rusak.png"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Keran Wudhu</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Kondisi keran wudhu bocor dan aliran air mengecil, perlu
-                  segera diperbaiki.
+                <p class="card-text text-secondary flex-grow-1">
+                  Pipa pembuangan dan keran air di dapur santri bocor sehingga air menggenang di lantai.
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Fasilitas</a>
+          <!-- Card 6 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-animate="animate__fadeInUp">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="position-absolute px-3 py-2" style="background-color: rgba(0, 0, 0, 0.5); z-index: 2; border-radius: 0 0 8px 0;">
+                <a class="text-white text-decoration-none small fw-semibold" href="#">Sosial</a>
               </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/air kotor.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Air Toilet Kotor</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Air di seluruh toilet sekolah terlihat kotor dan perlu segera
-                  ditangani.
+              <div style="height: 250px; overflow: hidden">
+                <img
+                  src="./assets/images/pembullyan.jpeg"
+                  alt="Ketertiban Asrama"
+                  class="w-100 h-100"
+                  style="object-fit: cover; object-position: center center"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Kebisingan Jam Istirahat</h5>
+                <p class="mb-2">
+                  <small class="text-secondary">
+                    By: <a href="#" class="text-decoration-none fw-semibold">Mufid Hidayat</a> &bull; 6 days ago
+                  </small>
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="kategori position-absolute px-3 py-2">
-                <a class="text-white text-decoration-none" href="">Sosial</a>
-              </div>
-
-              <img
-                style="max-height: 300px; overflow: hidden"
-                src="./assets/images/pembullyan.jpeg"
-                alt="Report Illustration"
-                class="card-img-top"
-              />
-
-              <div class="card-body">
-                <h5 class="card-title">Pembullyan</h5>
-                <small
-                  >By: <a href="" class="text-decoration-none">Anonymous</a> 2
-                  days ago</small
-                >
-                <p class="card-text mt-3">
-                  Pengaduan tentang tindakan bullying yang terjadi di lingkungan
-                  sekolah.
+                <p class="card-text text-secondary flex-grow-1">
+                  Suara bising dan pemakaian perangkat audio di lorong kamar asrama setelah pukul 22.00 malam.
                 </p>
-                <a href="" class="btn btn-primary">Selengkapnya</a>
+                <div class="mt-3">
+                  <a href="detail.report.html" class="btn btn-primary">Selengkapnya</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- pagination  -->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center mt-5 ">
-            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <!-- Pagination -->
+        <nav aria-label="Page navigation" data-animate="animate__fadeInUp">
+          <ul class="pagination justify-content-center mt-4 mb-2">
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item"><a class="page-link" href="#">Next</a></li>
@@ -402,44 +341,83 @@
         </nav>
       </div>
     </section>
+    <!-- All Reports Section End -->
 
-    <!-- JS Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Tambah Report Modal -->
+    <div
+      class="modal fade"
+      id="addModal"
+      tabindex="-1"
+      aria-labelledby="addModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5 fw-semibold" id="addModalLabel">
+              <i class="fa-solid fa-pen-to-square me-2"></i>Tambah Laporan Baru
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <form action="">
+            <div class="modal-body p-4 p-md-5">
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="judulInput">Judul Laporan:</label>
+                <input
+                  class="form-control shadow-sm"
+                  id="judulInput"
+                  type="text"
+                  placeholder="Masukkan judul laporan..."
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="kategoriInput">Pilih Kategori:</label>
+                <select class="form-select shadow-sm" id="kategoriInput" required>
+                  <option value="">Pilih Kategori...</option>
+                  <option value="fasilitas">Fasilitas</option>
+                  <option value="akademik">Akademik</option>
+                  <option value="sosial">Sosial / Anonymous</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="isiInput">Isi Laporan:</label>
+                <textarea
+                  id="isiInput"
+                  rows="5"
+                  class="form-control shadow-sm"
+                  placeholder="Tuliskan detail permasalahan, lokasi kejadian, dan waktu..."
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold" for="gambarInput">Upload Gambar / Bukti:</label>
+                <input
+                  class="form-control shadow-sm"
+                  id="gambarInput"
+                  type="file"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane me-1"></i> Kirim Laporan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal End -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      document.querySelectorAll(".navbar .nav-link").forEach((link) => {
-        link.addEventListener("click", () => {
-          document
-            .querySelector(".navbar .nav-link.active")
-            ?.removeAttribute("aria-current");
-          document
-            .querySelector(".navbar .nav-link.active")
-            ?.classList.remove("active");
-          link.classList.add("active");
-          link.setAttribute("aria-current", "page");
-        });
-      });
-    </script>
-
-    <!-- JS AOS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 700,
-        once: true,
-      });
-    </script>
-
+    <!-- Footer -->
     <footer>
       <div class="container">
         <div class="row g-4">
@@ -460,11 +438,12 @@
           </div>
           <div class="col-lg-3 footer-menu d-flex flex-column">
             <h4 class="fw-bold mb-2">Menu</h4>
-            <a class="text-decoration-none opacity-75" href="index.html#">home</a>
-            <a class="text-decoration-none opacity-75" href="index.html#about">about</a>
-            <a class="text-decoration-none opacity-75" href="index.html#service">services</a>
-            <a class="text-decoration-none opacity-75" href="index.html#recent">recent</a>
+            <a class="text-decoration-none opacity-75" href="index.html">Home</a>
+            <a class="text-decoration-none opacity-75" href="index.html#about">About</a>
+            <a class="text-decoration-none opacity-75" href="index.html#service">Services</a>
+            <a class="text-decoration-none opacity-75" href="reports.html">Recent</a>
             <a class="text-decoration-none opacity-75" href="index.html#faq">FAQ</a>
+            <a class="text-decoration-none opacity-75" href="panduan.html">Guide</a>
           </div>
           <div class="col-lg-4 footer-contact d-flex flex-column">
             <h4 class="fw-bold mb-2">Contact us</h4>
@@ -502,5 +481,16 @@
         </div>
       </div>
     </footer>
+    <!-- Footer End -->
+
+    <!-- JS Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- App JS -->
+    <script src="./assets/main.js"></script>
   </body>
 </html>
